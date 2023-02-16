@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استلام الكروت</title>
+    <link rel="stylesheet" href="css/style-dist.css">
+</head>
+<body dir="rtl">
+    <header class="header">
+        <input type="button" class="btn"  value="تحديث" onclick="refresh();">
+        <h2 class="head">وحدات التمليك الجزئي</h2>
+        <div class="links">
+            <a href="owers units/index.html"><input type="button" class="btn"  value="التمليك الكلي" ></a>
+        </div>
+        
+    </header>
+    
+    <div class="divRooms">
+        <div class="box1 box">
+            <h3>وحدات 52</h3>
+            <input type="button" class="btn" value="I1-12" onclick="insert('I1-12');">
+            <input type="button" class="btn" value="I1-22" onclick="insert('I1-22');">
+            <input type="button" class="btn" value="I3-02" onclick="insert('I3-02');">
+            <input type="button" class="btn" value="I4-03" onclick="insert('I4-03');">
+            <input type="button" class="btn" value="I4-13" onclick="insert('I4-13');">
+            <input type="button" class="btn" value="I4-23" onclick="insert('I4-23');">
+            <input type="button" class="btn" value="I5-05" onclick="insert('I5-05');">
+            <input type="button" class="btn" value="H3-23" onclick="insert('H3-23');">
+            <input type="button" class="btn" value="H3-24" onclick="insert('H3-24');">
+            <input type="button" class="btn" value="H1-01A" onclick="insert('H1-01A');">
+        </div>
+        <div class="box2 box">
+            <h3>وحدات 93</h3>
+            <input type="button" class="btn" value="H3-02" onclick="insert('H3-02');">
+            <input type="button" class="btn" value="H3-22" onclick="insert('H3-22');">
+            <input type="button" class="btn" value="I3-23" onclick="insert('I3-23');">
+            <input type="button" class="btn" value="I4-22" onclick="insert('I4-22');">
+            <input type="button" class="btn" value="H5-22" onclick="insert('H5-22');">
+            <input type="button" class="btn" value="H4-03" onclick="insert('H4-03');">
+        </div>
+        <div class="box3 box">
+            <h3>وحدات 105</h3>
+            <input type="button" class="btn" value="I4-21" onclick="insert('I4-21');">
+            <input type="button" class="btn" value="I3-24" onclick="insert('I3-24');">
+            <input type="button" class="btn" value="I2-11" onclick="insert('I2-11');">
+            <input type="button" class="btn" value="I4-11" onclick="insert('I4-11');">
+            <input type="button" class="btn" value="H6-04" onclick="insert('H6-04');">
+        </div>
+        
+    </div>
+    <div class="divInput">
+        <form action="" method="">
+            <div class="txtbox">
+                <input type="text" class="txtInput1 txtInput" value="" placeholder="رقم الوحدة">
+                <input type="text" class="txtInput2 txtInput" value="" placeholder="اسم المستلم / المسلم">
+                <input type="text" class="txtInput3 txtInput" value="" placeholder="عدد الكروت الفوط" >
+                <input type="text" class="inputSearch txtInput" value="" placeholder="بحث" onkeyup="getSearch(this.value)">
+            </div>
+            <div>
+                <button class="btn delivery" type="submit">تسليم</button>
+                <button class="btn receive" type="submit">استلام</button>
+                <!-- <input type="button" class="btn sear" value="نبذه عني" onclick="get();" ondblclick="hide();"> -->
+                <input type="button" class="show btn"  value="اظهار التفاصيل">
+                <input type="button" class="hide btn"  value="اخفاء التفاصيل">
+            </div>
+
+        </form>
+        
+
+    </div>
+    
+<div class="divTable">
+    <table border="1">
+        <thead>
+            <th>م</th>
+            <th>الوحدة</th>
+            <th>اسم المستلم / المسلم</th> 
+            <th>عدد كروت الفوط</th>
+            <th colspan="2">تسجيل دخول</th>
+            <th colspan="2">تسجيل خروج</th>
+
+        </thead>
+        <tbody class="tbody">
+
+        </tbody>
+    </table>
+</div>
+    
+
+        
+    
+    
+    
+    
+
+    <script src="js/main-dist.js"></script>
+</body>
+</html>
